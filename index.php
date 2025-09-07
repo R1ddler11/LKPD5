@@ -9,16 +9,7 @@ if (isset($_GET['hapus'])) {
   exit;
 }
 
-// Handle Update (Edit)
-if (isset($_POST['update'])) {
-  $id      = intval($_POST['id']);
-  $nama    = mysqli_real_escape_string($koneksi, $_POST['nama']);
-  $kelas   = mysqli_real_escape_string($koneksi, $_POST['kelas']);
-  $jurusan = mysqli_real_escape_string($koneksi, $_POST['jurusan']);
-  mysqli_query($koneksi, "UPDATE siswa SET nama='$nama', kelas='$kelas', jurusan='$jurusan' WHERE id=$id");
-  header("Location: index.php");
-  exit;
-}
+
 
 $total_siswa = mysqli_num_rows(mysqli_query($koneksi,"SELECT * FROM siswa"));
 ?>
@@ -112,7 +103,7 @@ $total_siswa = mysqli_num_rows(mysqli_query($koneksi,"SELECT * FROM siswa"));
                   <h5 class='modal-title'><i class='fas fa-edit me-2'></i>Edit Data</h5>
                   <button type='button' class='btn-close' data-bs-dismiss='modal'></button>
                 </div>
-                <form method='POST'>
+                <form method='POST' action='edit.php'>
                   <div class='modal-body'>
                     <input type='hidden' name='id' value='$d[id]'>
                     <div class='mb-3'>
