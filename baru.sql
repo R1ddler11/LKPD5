@@ -14,11 +14,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Dumping data for table db_siswa.siswa: ~3 rows (approximately)
+-- Dumping data for table db_siswa.siswa: ~0 rows (approximately)
 REPLACE INTO `siswa` (`id`, `nama`, `kelas`, `jurusan`) VALUES
-	(2, 'ghaijan', 'Kelas PPLG', 'ANIMASI'),
 	(5, 'alfarez', 'XII 2', 'ANIMASI'),
-	(6, 'RIdho', '123', '123');
+	(7, 'ghaijan', 'Kelas PPLG', 'ANIMASI'),
+	(8, '123', 'Kelas PPLG', 'PPLG');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
