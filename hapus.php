@@ -1,5 +1,5 @@
 <?php
 include "koneksi.php";
-
-// malas
+// PUNYA PARES
+// malas. hardcode sajah
 ?>
