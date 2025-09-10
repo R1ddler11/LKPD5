@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $query = "INSERT INTO siswa (nama, kelas, jurusan) VALUES ('$nama','$kelas','$jurusan')";
 
     if (mysqli_query($koneksi, $query)) {
-        header("Location: index.php"); // balik ke halaman utama setelah simpan
+        header("Location: tab.php"); // balik ke halaman utama setelah simpan
         exit;
     } else {
         echo "Error: " . mysqli_error($koneksi);

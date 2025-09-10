@@ -9,7 +9,7 @@ if (isset($_POST['update'])) {
   $kelas   = mysqli_real_escape_string($koneksi, $_POST['kelas']);
   $jurusan = mysqli_real_escape_string($koneksi, $_POST['jurusan']);
   mysqli_query($koneksi, "UPDATE siswa SET nama='$nama', kelas='$kelas', jurusan='$jurusan' WHERE id=$id");
-  header("Location: index.php");
+  header("Location: tab.php.php");
   exit;
 }
 ?>
